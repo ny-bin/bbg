@@ -5,9 +5,16 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Header from '../components/header';
+import Footer from '../components/footer';
 
 export default function Home({ allPostsData }) {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <div>test </div>
+      <Footer />
+    </>
+  );
 }
 
 export async function getStaticProps() {
