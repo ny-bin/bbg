@@ -4,15 +4,19 @@ import Date from '../components/date';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import { Profile } from '../components/profile';
 
 export default function Home({ allPostsData }) {
   return (
     <>
+      <Layout>
+        <Profile />
+      </Layout>
+      {/* <Head>
+        <title>BBG</title>
+      </Head>
       <Header />
-      <div>test </div>
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
