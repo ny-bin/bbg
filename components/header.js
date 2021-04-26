@@ -1,8 +1,6 @@
 import Logo from './logo';
 
-export const siteTitle = 'Next.js Sample Website';
-
-export function Header({}) {
+export function Header() {
   return (
     <header className="flex content-start shadow w-screen h-16">
       <div className="w-1/3 p-2 flex justify-start ">

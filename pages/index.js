@@ -1,22 +1,13 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import Date from '../components/date';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
+import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
-import { Profile } from '../components/profile';
+import { Main } from '../components/main';
 
 export default function Home({ allPostsData }) {
   return (
     <>
       <Layout>
-        <Profile />
+        <Main />
       </Layout>
-      {/* <Head>
-        <title>BBG</title>
-      </Head>
-      <Header />
-      <Footer /> */}
     </>
   );
 }

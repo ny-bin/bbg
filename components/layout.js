@@ -1,12 +1,6 @@
 import Head from 'next/head';
-import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
 import { Header } from './header';
 import { Footer } from './footer';
-
-const name = 'Bin';
-export const siteTitle = 'Bin BloG';
 
 export default function Layout({ children, home }) {
   return (
@@ -15,41 +9,9 @@ export default function Layout({ children, home }) {
         <Head>
           <link rel="icon" href="/images/bbg.svg" />
           <title>Bin Blog</title>
-          <meta name="description" content="Learn how to build a personal website using Next.js" />
-          <meta name="og:title" content={siteTitle} />
-          <meta name="twitter:card" content="summary_large_image" />
         </Head>
         <Header></Header>
-        {/* <header className={styles.header}>
-        {home ? (
-          <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header> */}
-        <main>{children}</main>
+        {children}
         <Footer />
         {/* {!home && (
         <div className={styles.backToHome}>
