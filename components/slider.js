@@ -16,14 +16,14 @@ export const SimpleSlider = () => {
   };
   const slider = {
     background: 'rgb(70,86,99)',
-    width: '75%',
+    width: '85%',
     marginLeft: 'auto',
     marginRight: 'auto',
     borderRadius: '30px',
   };
   return (
     <div className="pb-12">
-      <Slider style={slider} className="" {...settings}>
+      <Slider style={slider} {...settings}>
         <div>
           <SimpleProfile />
         </div>
