@@ -2,7 +2,7 @@ import Logo from './logo';
 
 export function Header() {
   return (
-    <header className="flex content-start shadow w-screen h-16">
+    <header className="flex content-start shadow h-16">
       <div className="w-1/3 p-2 flex justify-start ">
         <p className="w-1/5 text-xs text-center text-gray-300 uppercase py-2 m-1">Home</p>
         <p className="w-1/5 text-xs text-center text-gray-300 uppercase py-2 m-1">Work</p>

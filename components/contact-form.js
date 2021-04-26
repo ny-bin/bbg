@@ -1,6 +1,6 @@
 export function ContactForm() {
   return (
-    <div>
+    <div className="py-5">
       <p className="relative py-12 text-5xl text-center text-white">Contact Me</p>
       <p className="text-lg leading-loose text-center text-gray-300 py-5">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

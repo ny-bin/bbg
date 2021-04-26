@@ -2,15 +2,15 @@ import Head from 'next/head';
 import { Header } from './header';
 import { Footer } from './footer';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
     <>
-      <div className="bg-gray-700 h-screen">
-        <Head>
-          <link rel="icon" href="/images/bbg.svg" />
-          <title>Bin Blog</title>
-        </Head>
-        <Header></Header>
+      <Head>
+        <link rel="icon" href="/images/bbg.svg" />
+        <title>Bin Blog</title>
+      </Head>
+      <body className="bg-gray-700 h-screen">
+        <Header />
         {children}
         <Footer />
         {/* {!home && (
@@ -20,7 +20,7 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )} */}
-      </div>
+      </body>
     </>
   );
 }
