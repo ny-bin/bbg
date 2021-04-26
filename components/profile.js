@@ -1,6 +1,6 @@
 export function Profile() {
   return (
-    <main className="relative bg-gray-700 shadow w-screen h-auto">
+    <main className="relative bg-gray-700 shadow w-screen min-h-screen">
       <p className="relative py-12 text-5xl text-center text-white">Profile</p>
       <div className=" md:flex content-start w-screen ">
         <ul className="md:w-1/2 flex-none content-center px-10">
