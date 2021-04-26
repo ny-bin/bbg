@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { Header } from './header';
 import { Footer } from './footer';
 
-export default function Layout({ children }) {
+export default function Layout(props) {
   return (
     <>
       <Head>
@@ -10,8 +10,8 @@ export default function Layout({ children }) {
         <title>Bin Blog</title>
       </Head>
       <body className="bg-gray-700 h-screen">
-        <Header />
-        {children}
+        <Header page={props.page} />
+        {props.children}
         <Footer />
         {/* {!home && (
         <div className={styles.backToHome}>
