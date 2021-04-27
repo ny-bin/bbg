@@ -5,7 +5,7 @@ export function SimpleProfile() {
       <div className=" md:flex content-start ">
         <ul className="md:w-1/2 flex-none content-center px-10">
           <li className="flex items-center justify-center">
-            <img src="images/profile.jpg" className="w-48 h-48 rounded-full " />
+            <img src="images/faceimg.png" className="w-48 h-48 rounded-full " />
           </li>
           <li className=" text-lg font-bold text-center text-red-400 uppercase">Lorem Ipsum</li>
           <li className="text-base italic font-italic leading-snug text-center text-gray-300">

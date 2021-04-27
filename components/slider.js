@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { SimpleProfile } from './simple-profile';
 import { SimpleBlog } from './simple-blog';
 
-export const SimpleSlider = () => {
+export function SimpleSlider(props) {
   const settings = {
     dots: true,
     infinite: true,
@@ -28,7 +28,7 @@ export const SimpleSlider = () => {
           <SimpleProfile />
         </div>
         <div>
-          <SimpleBlog />
+          <SimpleBlog data={props.data} />
         </div>
         <div>aaaaa</div>
         <div>aaaaa</div>
@@ -36,4 +36,4 @@ export const SimpleSlider = () => {
       </Slider>
     </div>
   );
-};
+}

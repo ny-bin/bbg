@@ -2,10 +2,10 @@ import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import { Main } from '../components/homemain';
 
-export default function Home() {
+export default function Home({ allPostsData }) {
   return (
     <Layout page="home">
-      <Main />
+      <Main data={allPostsData} />
     </Layout>
   );
 }
