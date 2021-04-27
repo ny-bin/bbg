@@ -7,15 +7,18 @@ export function SimpleBlog(props) {
       <p className="relative py-12 text-5xl text-center text-white">Blog</p>
       <div className=" md:flex content-start ">
         <ul className="w-full h-full md:flex content-center px-10">
-          {props.data.map(({ id, date, title }) => (
-            <li className="md:w-1/2 items-center justify-center" key={id}>
-              <p className="text-center ">{title}</p>
+          {props.data.slice(0, 2).map(({ id, date, title, img }, index) => (
+            <li className="md:w-1/2 justify-center" key={id}>
+              <img className="justify-center m-auto" src={img}></img>
               <br />
-              <p className="text-center">投稿日:{date}</p>
-              <Link href={'/posts/' + id}>
-                <a className="item-center bg-gray-700"> 記事へ</a>
-              </Link>
-              <p className="text-center">{id}</p>
+              <div className="text-center ">
+                <Link href={'/posts/' + id}>
+                  <a className="text-4xl text-red-200"> {title}</a>
+                </Link>
+              </div>
+              <br />
+
+              <p className="text-4xs text-gray-100 text-center  text-center">投稿日:{date}</p>
             </li>
           ))}
         </ul>
