@@ -3,31 +3,29 @@ export function SimpleProfile() {
     <div>
       <p className="relative py-12 text-5xl text-center text-white">Profile</p>
       <div className=" md:flex content-start ">
-        <ul className="md:w-1/2 flex-none content-center px-10">
+        <ul className="md:w-1/2 flex-none content-center px-10 md:border-r md:border-b-0 border-b mb-5">
           <li className="flex items-center justify-center">
             <img src="images/faceimg.png" className="w-48 h-48 rounded-full " />
           </li>
-          <li className=" text-lg font-bold text-center text-red-400 uppercase">Lorem Ipsum</li>
+          <li className=" text-lg font-italic text-center text-red-400">Yuto Nakai (bin)</li>
           <li className="text-base italic font-italic leading-snug text-center text-gray-300">
-            Jan 13th, 2018
+            Dec.10th,1997
           </li>
         </ul>
 
-        <div className="flex text-center">
-          <p className="text-2xl text-white text-center">
-            Lorem Ipsum dolor sitLorem Ipsum dolor sit
+        <div className="flex text-center px-5">
+          <p className="text-lg text-gray-200 text-center">
+            初めまして、binです。
             <br />
-            amet consecteturaaaaaaaaaa
+            関西でエンジニアとして働いてます。
             <br />
-            amet consecteturLorem Ipsum dolor sit
             <br />
-            amet consecteturLorem Ipsum dolor sit
+            主に.Net(C#)を使用したシステム開発、
             <br />
-            amet consecteturLorem Ipsum dolor sit
+            TypeScript,Next.js辺りを使用したWebアプリやサイト制作メインで活動しています。
             <br />
-            amet consecteturLorem Ipsum dolor sit
             <br />
-            amet consectetur
+            お問い合わせ等はメニューのContact欄からご覧ください。
           </p>
         </div>
       </div>
