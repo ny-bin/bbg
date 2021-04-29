@@ -1,7 +1,7 @@
 export function SimpleProfile() {
   return (
     <div>
-      <p className="relative py-12 text-5xl text-center text-white">Profile</p>
+      <p className="relative py-12 text-4xl text-center text-white">Profile</p>
       <div className=" md:flex content-start ">
         <ul className="md:w-1/2 flex-none content-center px-10 md:border-r md:border-b-0 border-b mb-5">
           <li className="flex items-center justify-center">
