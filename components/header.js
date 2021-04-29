@@ -3,7 +3,7 @@ import Logo from './logo';
 import React, { useState } from 'react';
 import { useRouter } from 'next/dist/client/router';
 
-export function Header(props) {
+export function Header() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   return (

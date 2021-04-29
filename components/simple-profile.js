@@ -8,8 +8,8 @@ export function SimpleProfile() {
             <img src="images/faceimg.png" className="w-48 h-48 rounded-full " />
           </li>
           <li className=" text-lg font-italic text-center text-red-400">Yuto Nakai (bin)</li>
-          <li className="text-base italic font-italic leading-snug text-center text-gray-300">
-            Dec.10th,1997
+          <li className="text-base  font-italic leading-snug text-center text-gray-300">
+            C#/TypeScript/JavaScript/Python Developer
           </li>
         </ul>
 

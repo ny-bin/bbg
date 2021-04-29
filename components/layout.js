@@ -10,7 +10,7 @@ export default function Layout(props) {
         <title>Bin Blog</title>
       </Head>
       <body className="bg-gray-700 h-screen">
-        <Header page={props.page} />
+        <Header />
         {props.children}
         <Footer />
         {/* {!home && (
