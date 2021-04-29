@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 export function SimpleBlog(props) {
-  console.log(props.data[0]);
   return (
     <div className="pb-5">
       <p className="relative py-12 text-5xl text-center text-white">Blog</p>

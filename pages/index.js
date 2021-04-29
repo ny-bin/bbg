@@ -5,10 +5,12 @@ import { SimpleSlider } from '../components/slider';
 export default function Home({ allPostsData }) {
   return (
     <Layout page="home">
-      <main className="bg-gray-700 shadow min-h-screen mt-16">
+      <main className="bg-gray-700 shadow min-h-screen mt-16 pt-14">
         <SimpleSlider data={allPostsData} />
-        <div className="pt-40 py-5  text-center text-white">
-          <p className="relative py-5 text-4xl border-b w-1/2 mx-auto">About This Page</p>
+        <div className="pt-20 py-5  text-center text-white">
+          <p className="relative py-5 text-2xl md:text-4xl border-b w-1/2 mx-auto">
+            About This Page
+          </p>
           <p className="text-m leading-loose text-center text-gray-300 py-2">
             技術ブログ、制作物掲載メインのサイトとなっております。
           </p>

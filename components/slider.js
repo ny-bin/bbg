@@ -14,17 +14,9 @@ export function SimpleSlider(props) {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-  const slider = {
-    background: 'rgb(70,86,99)',
-    width: '70%',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    borderRadius: '30px',
-  };
   return (
     <div className="pb-12">
-      <Slider className="w-2/3 mx-auto bg-gray-800 rounded-3xl py-8" {...settings}>
-        {/* <Slider style={slider} {...settings}> */}
+      <Slider className="w-4/5 md:w-2/3 mx-auto bg-gray-800 rounded-3xl py-8" {...settings}>
         <div>
           <SimpleProfile />
         </div>
