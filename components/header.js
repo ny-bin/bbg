@@ -75,14 +75,17 @@ export function Header(props) {
               </Link>
             </li>
             <li class="border-b md:border-none">
-              <a href="#" class="block px-8 py-1 my-1 hover:bg-gray-600 rounded">
-                お知らせ
-              </a>
-            </li>
-            <li>
-              <a href="#" class="block px-8 py-1 my-1 hover:bg-gray-600 rounded">
-                お問い合わせ
-              </a>
+              <Link href="/blog">
+                <a
+                  className={
+                    router.pathname == '/blog'
+                      ? 'block px-8 py-1 my-1 hover:bg-gray-600 rounded text-red-300'
+                      : 'block px-8 py-1 my-1 hover:bg-gray-600 rounded'
+                  }
+                >
+                  Contact
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
