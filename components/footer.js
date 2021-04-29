@@ -1,18 +1,38 @@
 export function Footer({}) {
   return (
-    <footer className="flex justify-center bg-gray-700 shadow h-16">
-      <p className="text-2xl self-center ">©Nybin</p>
-      {/* <div className="w-1/3 p-2 flex space-x-6  justify-end ">
-        <p className="w-1/5 h-full text-xm text-center py-2 m-1">
-          <img src="images/twitter.svg"></img>
-        </p>
-        <p className="w-1/5 h-full text-xm text-center py-2 m-1">
-          <img src="images/github.svg"></img>
-        </p>
-        <p className="w-1/5 h-full text-xm text-center py-2 m-1">
-          <img src="images/twitch.svg"></img>
-        </p>
-      </div> */}
+    <footer className="md:flex bg-gray-700 h-16">
+      <div className="md:flex md:mx-auto">
+        <p className="block text-lg text-center md:mr-8 md:my-auto">©bin</p>
+        <div className="flex space-x-6 justify-center mx-auto md:mx-0 md:my-auto">
+          <a
+            className="w-1/10 h-full text-center py-2"
+            href="https://twitter.com/nybin5"
+            aria-label="twitter"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+            </svg>
+          </a>
+          <a
+            className="w-1/10 h-full text-center py-2"
+            href="https://github.com/ny-bin"
+            aria-label="github"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z" />
+            </svg>
+          </a>
+          <p className="w-1/10 h-full text-center py-2">
+            <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path d="M10.224 17.806l1.776-1.776h3.343l2.09-2.09v-6.686h-10.03v8.776h2.821v1.776zm3.866-8.149h1.254v3.653h-1.254v-3.653zm-3.344 0h1.254v3.653h-1.254v-3.653zm1.254-9.657c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.687 14.567l-3.657 3.657h-2.716l-1.777 1.776h-1.88v-1.776h-3.344v-9.821l.941-2.403h12.433v8.567z" />
+            </svg>
+          </p>
+        </div>
+      </div>
     </footer>
   );
 }

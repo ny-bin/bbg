@@ -16,14 +16,15 @@ export function SimpleSlider(props) {
   };
   const slider = {
     background: 'rgb(70,86,99)',
-    width: '85%',
+    width: '70%',
     marginLeft: 'auto',
     marginRight: 'auto',
     borderRadius: '30px',
   };
   return (
     <div className="pb-12">
-      <Slider style={slider} {...settings}>
+      <Slider className="w-2/3 mx-auto bg-gray-800 rounded-3xl py-8" {...settings}>
+        {/* <Slider style={slider} {...settings}> */}
         <div>
           <SimpleProfile />
         </div>

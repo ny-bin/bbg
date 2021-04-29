@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Logo from './logo';
 import React, { useState } from 'react';
-import { Burger } from './burger';
 import { useRouter } from 'next/dist/client/router';
 
 export function Header(props) {
@@ -14,7 +13,7 @@ export function Header(props) {
           <Logo width={100} height={55} />
           <div className="md:hidden mx-8">
             <button className="py-5" onClick={() => setOpen(!open)}>
-              <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                 <path
                   className={open ? 'hidden' : undefined}
                   d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
@@ -49,7 +48,7 @@ export function Header(props) {
               </Link>
             </li>
             <li class="border-b md:border-none">
-              <Link href="/">
+              <Link href="/profile">
                 <a
                   className={
                     router.pathname == '/profile'
