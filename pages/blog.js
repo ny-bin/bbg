@@ -1,23 +1,36 @@
 import Layout from '../components/layout';
+import Link from 'next/link';
 import { getSortedPostsData } from '../lib/posts';
-import { SimpleSlider } from '../components/slider';
 
 export default function Home({ allPostsData }) {
   return (
     <Layout page="home">
-      <main className="bg-gray-700 shadow min-h-screen mt-16">
-        <SimpleSlider data={allPostsData} />
-        <div className="pt-40 py-5  text-center text-white">
-          <p className="relative py-5 text-4xl border-b w-1/2 mx-auto">About This Page</p>
-          <p className="text-m leading-loose text-center text-gray-300 py-2">
-            技術ブログ、制作物掲載メインのサイトとなっております。
+      <main className="bg-gray-700 min-h-screen mt-16 container mx-auto">
+        <div>
+          <p className="w-2/3 mx-auto font-extrabold font-serif text-3xl text-gray-200 pb-10">
+            Tech
           </p>
-          <p className="text-center text-m leading-loose text-gray-300 py-2">
-            こちらの記事を見て、質問等あればいつでも問い合わせていただけたら返信いたします。
-          </p>
-          <p className=" text-center text-m leading-loose text-gray-300 py-2">
-            また、サイト制作等のご相談やデザイン制作のご相談等あればTwitterのDMからご連絡ください。
-          </p>
+          <div class="flex flex-wrap -m-2 w-2/3 mx-auto">
+            {allPostsData.map(({ id, date, title, img }) => (
+              <div class="p-2 md:w-1/2 w-full h-40" key={id}>
+                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg bg-gray-200">
+                  <div class="w-16 h-16 bg-gray-100 mr-4 flex justify-center items-center">
+                    <img
+                      alt="team"
+                      class="w-16 object-cover object-center flex-shrink-0"
+                      src={img}
+                      width="80"
+                      height="80"
+                    />
+                  </div>
+                  <div class="flex-grow">
+                    <h2 class="text-gray-900 title-font font-medium pb-2">{title}</h2>
+                    <p class="text-gray-500 italic text-xs">{date}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </main>
     </Layout>
