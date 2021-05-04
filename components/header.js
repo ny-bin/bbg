@@ -74,10 +74,10 @@ export function Header() {
               </Link>
             </li>
             <li class="border-b md:border-none">
-              <Link href="/blog">
+              <Link href="/contact">
                 <a
                   className={
-                    router.pathname == '/blog'
+                    router.pathname == '/contact'
                       ? 'block px-8 py-1 my-1 hover:bg-gray-600 rounded text-red-300'
                       : 'block px-8 py-1 my-1 hover:bg-gray-600 rounded'
                   }

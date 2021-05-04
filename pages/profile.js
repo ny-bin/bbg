@@ -7,7 +7,7 @@ export default function Profile() {
     <Layout page="profile">
       <main className="bg-gray-700 shadow min-h-screen mt-8">
         <div className="pt-20 py-5  text-center text-white mx-auto">
-          <ul className="md:w-1/2 mx-auto pb-10">
+          <ul className="md:w-1/2 mx-auto">
             <li className="flex items-center justify-center">
               <img src="images/faceimg.png" className="w-48 h-48 rounded-full " />
             </li>
@@ -17,13 +17,17 @@ export default function Profile() {
             </li>
           </ul>
         </div>
-        <div className="pt-20 py-5  text-center text-white">
-          <p className="relative py-5 text-2xl md:text-4xl border-b w-1/2 mx-auto">経歴</p>
-          <p className="w-3/4 md:w-1/2 lg:w-1/4 mx-auto text-lg md:text-xl leading-loose text-left text-gray-300 py-2">
-            2016/4 -　京都大学 農学部 入学 <br />
-            2020/3 - 京都大学　卒 <br />
-            2020/4 - 大阪でエンジニアとして働いております。
-          </p>
+        <div className="container px-5 mx-auto pt-20">
+          <div class="flex flex-col text-center w-full mb-8 lg:mb-12 lg:mt-8">
+            <p className="relative py-5 text-2xl md:text-4xl border-b w-1/2 mx-auto text-white ">
+              経歴
+            </p>
+            <p className="w-3/4 md:w-1/2 lg:w-1/4 mx-auto text-lg md:text-xl leading-loose text-left text-gray-300 py-2">
+              2016/4 -　京都大学 農学部 入学 <br />
+              2020/3 - 京都大学　卒 <br />
+              2020/4 - 大阪でエンジニアとして働いております。
+            </p>
+          </div>
         </div>
         <div class="container px-5 mx-auto pt-20">
           <div class="flex flex-col text-center w-full mb-8 lg:mb-12 lg:mt-8">

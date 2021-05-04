@@ -6,7 +6,7 @@ export function SimpleBlog(props) {
       <p className="relative py-12 text-5xl text-center text-white">Blog</p>
       <div className=" md:flex content-start ">
         <ul className="w-full h-full md:flex content-center px-10">
-          {props.data.slice(0, 2).map(({ id, date, title, img }, index) => (
+          {props.data.slice(0, 2).map(({ id, date, title, img }) => (
             <li className="md:w-1/2 justify-center" key={id}>
               <img className="justify-center m-auto" src={img}></img>
               <br />
