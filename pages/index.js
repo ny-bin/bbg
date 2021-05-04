@@ -5,7 +5,7 @@ import { SimpleSlider } from '../components/slider';
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-      <main className="bg-gray-700 shadow min-h-screen mt-16 pt-14">
+      <main className="bg-gray-700 shadow min-h-screen mt-16 pt-4">
         <SimpleSlider data={allPostsData} />
         <div className="pt-20 py-5  text-center text-white">
           <p className="relative py-5 text-2xl md:text-4xl border-b w-1/2 mx-auto">

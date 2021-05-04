@@ -13,13 +13,6 @@ export default function Layout(props) {
         <Header />
         {props.children}
         <Footer />
-        {/* {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )} */}
       </body>
     </>
   );
