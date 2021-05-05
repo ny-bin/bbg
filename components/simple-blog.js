@@ -8,11 +8,11 @@ export function SimpleBlog(props) {
         <ul className="w-full h-full md:flex content-center px-10">
           {props.data.slice(0, 2).map(({ id, date, title, img }) => (
             <li className="md:w-1/2 justify-center" key={id}>
-              <img className="justify-center m-auto" src={img} width="60"></img>
+              <img className="justify-center m-auto" src={img} width="80"></img>
               <br />
               <div className="text-center ">
                 <Link href={'/posts/' + id}>
-                  <a className="text-4xl text-red-200"> {title}</a>
+                  <a className="text-2xl text-red-200"> {title}</a>
                 </Link>
               </div>
               <br />

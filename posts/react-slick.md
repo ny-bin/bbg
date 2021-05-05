@@ -1,6 +1,6 @@
 ---
 title: 'React-Slick使ってみた'
-date: '2020-05-04'
+date: '2021-05-04'
 img: 'blogIcon/piece.svg'
 ---
 

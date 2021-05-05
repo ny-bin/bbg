@@ -15,9 +15,9 @@ export default function Post({ postData }) {
         <div className="italic text-sm">
           <Date dateString={postData.date} />
         </div>
-        <div className="mx-auto">
+        <div className="mx-auto pt-12">
           <div
-            className={markdownStyles['markdown']}
+            className={markdownStyles['markdown-body']}
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
           />
         </div>

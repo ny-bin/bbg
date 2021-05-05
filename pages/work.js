@@ -2,7 +2,7 @@ import Layout from '../components/layout';
 import { mainLanguage } from '../lib/tech';
 import { subLanguage } from '../lib/tech';
 
-export default function Contact() {
+export default function Work() {
   return (
     <Layout>
       <main className="bg-gray-700 shadow min-h-screen mt-8">
