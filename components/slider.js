@@ -23,9 +23,6 @@ export function SimpleSlider(props) {
         <div>
           <SimpleBlog data={props.data} />
         </div>
-        <div>aaaaa</div>
-        <div>aaaaa</div>
-        <div>aaaaa</div>
       </Slider>
     </div>
   );
