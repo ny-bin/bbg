@@ -9,7 +9,7 @@ export default function Profile() {
         <div className="pt-20 py-5  text-center text-white mx-auto">
           <ul className="md:w-1/2 mx-auto">
             <li className="flex items-center justify-center">
-              <img src="images/faceimg.png" className="w-48 h-48 rounded-full " />
+              <img src="images/profile.jpg" className="w-48 h-48 rounded-full " />
             </li>
             <li className=" text-lg font-italic text-center text-red-400">Yuto Nakai (bin)</li>
             <li className="text-base  font-italic leading-snug text-center text-gray-300">
